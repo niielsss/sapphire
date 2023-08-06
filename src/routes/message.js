@@ -17,8 +17,7 @@ class MessageRoute extends Route {
             channel.send(_request.body.message);
             return response.status(200).json({ message: 'Message sent.' });
         } catch (error) {
-            console.log(error);
-            return response.status(400).json({ message: 'Invalid JSON body.'});
+            return response.status(400).json({ message: 'Message not sent.'});
         }
 
     }

@@ -9,12 +9,10 @@ class HelloWorldRoute extends Route {
     }
 
     [methods.GET](_request, response) {
-        console.log('hellow world called!');
         return response.json({ message: 'Hello world!'});
     }
 
     [methods.POST](_request, response) {
-        console.log('hellow world post called!');
 		response.json({ message: 'Hellow world post!' });
 	}
 }

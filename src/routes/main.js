@@ -9,7 +9,6 @@ class MainRoute extends Route {
     }
 
     [methods.GET](_request, response) {
-        console.log('main endpoint called!');
 		return response.json({ message: 'main endpoint!' });
 	}
 
