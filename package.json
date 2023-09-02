@@ -2,6 +2,7 @@
   "name": "sapphire-bot",
   "main": "src/index.js",
   "dependencies": {
+    "@sapphire/fetch": "^2.4.1",
     "@sapphire/framework": "^4.5.1",
     "@sapphire/plugin-api": "^5.1.0",
     "@sapphire/plugin-editable-commands": "^3.0.2",

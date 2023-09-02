@@ -7,6 +7,7 @@ class PingCommand extends Command {
             ...options,
             description: 'Ping!',
             name: 'ping',
+            preconditions: ['StaffOnly']
         });
     }
 

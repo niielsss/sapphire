@@ -10,11 +10,12 @@ class MyLogger extends Logger {
     }
     
     async error(...content) {
+        super.error(...content);
         const channel = await container.client.channels.cache.get(bot_logs);
         const embed = new EmbedBuilder()
             .setColor('#DD2E44')
             .setTitle('Error')
-            .setDescription(`${content[0]}\n\`\`\`${content[1]}\`\`\``);
+            .setDescription(`${content}`);
 
         if (channel) {
             channel.send({ embeds: [embed] });
